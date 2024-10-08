@@ -73,6 +73,11 @@
                     "title": "Weight",
                     "type": "integer",
                     "minimum": 0
+                  },
+                  "load_on_low_memory": {
+                    "title": "Load on low memory",
+                    "description": "UNDOCUMENTED.",
+                    "type": "boolean"
                   }
                 }
               }
