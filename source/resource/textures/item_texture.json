@@ -70,7 +70,7 @@
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
-      "propertyNames": { "pattern": "^[a-z0-9_:\\-]*$" },
+      "propertyNames": { "pattern": "^[a-z0-9_:\\-.]*$" },
       "additionalProperties": {
         "title": "Texture Data",
         "description": "UNDOCUMENTED.",
@@ -79,7 +79,10 @@
         "additionalProperties": false,
         "properties": {
           "textures": {
-            "oneOf": [{ "$ref": "#/definitions/texture" }, { "description": "A collection of textures.", "title": "Texture Data", "type": "array", "items": { "$ref": "#/definitions/texture" } }]
+            "oneOf": [
+              { "$ref": "#/definitions/texture" },
+              { "description": "A collection of textures.", "title": "Texture Data", "type": "array", "items": { "$ref": "#/definitions/texture" } }
+            ]
           }
         }
       }
